@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TimerActivity">
+
+    <TextView
+        android:id="@+id/clock_face"
+        style="@style/ClockStyle"
+        android:text="@string/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:layout_gravity="center_horizontal"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12"
+        android:layout_marginTop="4dp">
+
+        <TextView
+            android:id="@+id/circle_list"
+            style="@style/ScreenTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/stringForCircleList" />
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/start_button"
+            style="@style/PrimaryButton"
+            android:text="@string/startButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/marginBtnTimerScreen"/>
+
+        <Button
+            android:id="@+id/stop_button"
+            style="@style/PrimaryButton"
+            android:text="@string/stopButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/marginBtnTimerScreen"/>
+
+        <Button
+            android:id="@+id/pause_button"
+            style="@style/PrimaryButton"
+            android:text="@string/pauseButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/marginBtnTimerScreen"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/circle_button"
+        style="@style/PrimaryButton"
+        android:text="@string/circle_button"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:layout_margin="@dimen/marginBtnTimerScreen"/>
+
+</LinearLayout>

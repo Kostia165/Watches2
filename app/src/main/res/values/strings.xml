@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Годинник</string>
+    <string name="timer">Clock face</string>
+    <string name="startButton">Старт</string>
+    <string name="stopButton">Стоп</string>
+    <string name="pauseButton">Пауза</string>
+    <string name="circle_button">Коло</string>
+    <string name="timerButton">Таймер</string>
+    <string name="optionsButton">Налаштування</string>
+    <string name="stringForCircleList">Кола:</string>
+    <string name="submitInOptions">Підтвердити</string>
+    <string name="ValueTimezone">Europe/Kiev</string>
+    <string name="TitleTimezone">\"Часовий пояс: \"</string>
+    <string name="action_timer_settings">Налаштування</string>
+
+    <string name="dialog_cancel">Відмінити</string>
+    <string name="dialog_set">Встановити</string>
+    <string name="dialog_title">Встановити час</string>
+</resources>

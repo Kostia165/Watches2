@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="buttonRadius">4dp</dimen>
+    <dimen name="marginBtnTickerScreen">20px</dimen>
+    <dimen name="marginBtnTimerScreen">2dp</dimen>
+    <dimen name="marginTopCircleList">2dp</dimen>
+    <dimen name="widthOfStopButton">100dp</dimen>
+    <dimen name="heightOfLineTickerScreen">10dp</dimen>
+    <dimen name="widthOfTimerBtn">190dp</dimen>
+
+</resources>
