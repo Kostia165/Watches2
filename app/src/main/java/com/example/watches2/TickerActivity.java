@@ -63,7 +63,23 @@ public class TickerActivity extends AppCompatActivity{
             hoursView.setText(formatHours(date));
             yearView.setText(formatYear(date));
         }
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        t.interrupt();
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
         startClock();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
     }
 
     @Override
@@ -97,11 +113,11 @@ public class TickerActivity extends AppCompatActivity{
     }
 
     public void startClock(){
-        t =new Thread(){
+        t = new Thread(){
             @Override
             public void run(){
-                while(!isInterrupted()){
-                    try {
+                try {
+                    while(!isInterrupted()){
                         Thread.sleep(1000);  //1000ms = 1 sec
                         if(this == null)
                             return;
@@ -115,10 +131,11 @@ public class TickerActivity extends AppCompatActivity{
                                 }
                             }
                         });
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
                     }
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
                 }
+
             }
         };
         t.start();
